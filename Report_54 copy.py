@@ -2,7 +2,7 @@ def menu():
     print("Menu\n-------------\n"
           "1.Encode\n2.Decode\n3.Quit\n")
 
-##Karen C. Cubas
+##Karen Cubas
 def encode(original):
     encoded = ""
      ## Shift digits of original up by 3
