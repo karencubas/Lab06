@@ -13,11 +13,13 @@ def encode(original):
            encoded += str(int(char) + 3 -10 )
 
     return encoded
-def decode(encoded):
-    ## Partner
-    decoded = ""
-
-    return decoded
+def decode(password):
+    result = ""
+    password = str(password)
+    for digit in password:
+        digit = (int(digit) - 3) % 10
+        result = result + str(digit)
+    return result
 
 if __name__ == '__main__' :
 
